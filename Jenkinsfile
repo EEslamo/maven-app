@@ -27,7 +27,7 @@ pipeline {
                 }
             }
         }
-        stage('build-maven') {
+        stage('deploying-maven') {
             steps {
                 script {
                     echo 'Deploying maven...'
