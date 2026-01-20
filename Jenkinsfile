@@ -15,11 +15,6 @@ pipeline {
         }
 
         stage('build-maven') {
-            when {
-                expression {
-                    BRANCH_NAME == 'master'
-                    }
-                }
             steps {
                 script {
                     echo "Building maven in ${BRANCH_NAME} branch..."
