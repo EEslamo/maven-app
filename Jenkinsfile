@@ -18,6 +18,7 @@ pipeline {
             steps {
                 script {
                     echo "Building maven in ${BRANCH_NAME} branch..."
+                    sh 'mvn package'
                 }
             }
         }
