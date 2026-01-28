@@ -10,6 +10,7 @@ pipeline {
             steps {
                 script {
                     echo "Testing the application in ${BRANCH_NAME} branch"
+                    echo "this message for confirming that the pipeline has been triggered automatically"
                 }
             }
         }
